@@ -1,0 +1,18 @@
+{
+  "name": "file-stalker",
+  "version": "0.0.1",
+  "description": "Watch for changes over lists of files (local and remote) backed by Redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test-basic"
+  },
+  "author": "Alex Khmelnitsky",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^2.0.0",
+    "node-redis": "^0.1.7",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "watchr": "^3.0.1"
+  }
+}
