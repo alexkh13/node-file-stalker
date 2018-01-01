@@ -1,0 +1,2 @@
+CONFIG_FILE     file://config.txt
+HOSTS_FILE      file://hosts.txt

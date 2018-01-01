@@ -6,13 +6,11 @@ Stalker.resolver.define('HOSTS_FILE', {
 });
 
 let malwareStalker = new Stalker({
-    listPath: __dirname + "/lists/list1.txt",
+    listPath: __dirname + "/lists/list1",
     redis: {
         password: 'foobared'
     }
 });
-
-malwareStalker.stalk();
 
 malwareStalker.on('fail', (err) => {
     console.error(err)
@@ -25,3 +23,5 @@ malwareStalker.on('add', (values, source) => {
 malwareStalker.on('remove', (values, source) => {
     console.log(source.url, "removed", values)
 });
+
+malwareStalker.stalk();

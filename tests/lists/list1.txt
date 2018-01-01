@@ -1,2 +1,0 @@
-CONFIG_FILE     file://files/config.txt
-HOSTS_FILE      file://files/hosts.txt
