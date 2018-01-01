@@ -14,6 +14,10 @@ let malwareStalker = new Stalker({
 
 malwareStalker.stalk();
 
+malwareStalker.on('fail', (err) => {
+    console.error(err)
+});
+
 malwareStalker.on('add', (values, source) => {
     console.log(source.url, "added", values)
 });
